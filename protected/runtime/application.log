@@ -1,0 +1,202 @@
+2013/09/24 20:06:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii
+---
+2013/09/24 20:06:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii
+---
+2013/09/24 20:07:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii
+---
+2013/09/24 20:08:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii
+---
+2013/09/24 20:08:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii
+---
+2013/09/24 20:10:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii/default/login
+---
+2013/09/24 20:10:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii/default/login
+---
+2013/09/24 20:10:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii/default/login
+---
+2013/09/24 20:10:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii/default/login
+---
+2013/09/24 20:13:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii/default/login
+---
+2013/09/24 20:14:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "framework/gii".' in /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('framework/gii')
+#1 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/framework/gii/
+---
+2013/09/24 20:29:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii
+---
+2013/09/24 20:30:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii
+---
+2013/09/24 20:30:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii
+---
+2013/09/24 20:30:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii
+---
+2013/09/24 20:30:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/choiceco/webregale.com/uxlove/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/gii
+---
+2013/09/30 21:58:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in /home/choiceco/webregale.com/uxlove/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 /home/choiceco/webregale.com/uxlove/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/choiceco/webregale.com/uxlove/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/choiceco/webregale.com/uxlove/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#9 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/user/create
+HTTP_REFERER=http://uxlove.webregale.com/index.php/user/index
+---
+2013/09/30 23:31:55 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "User.balance".' in /home/choiceco/webregale.com/uxlove/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/choiceco/webregale.com/uxlove/framework/db/ar/CActiveRecord.php(145): CComponent->__get('balance')
+#1 /home/choiceco/webregale.com/uxlove/protected/models/User.php(122): CActiveRecord->__get('balance')
+#2 /home/choiceco/webregale.com/uxlove/protected/views/user/admin.php(45): User->search()
+#3 /home/choiceco/webregale.com/uxlove/framework/web/CBaseController.php(126): require('/home/choiceco/...')
+#4 /home/choiceco/webregale.com/uxlove/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/choiceco/...', Array, true)
+#5 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(869): CBaseController->renderFile('/home/choiceco/...', Array, true)
+#6 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /home/choiceco/webregale.com/uxlove/protected/controllers/UserController.php(143): CController->render('admin', Array)
+#8 /home/choiceco/webregale.com/uxlove/framework/web/actions/CInlineAction.php(49): UserController->actionAdmin()
+#9 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/choiceco/webregale.com/uxlove/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /home/choiceco/webregale.com/uxlove/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /home/choiceco/webregale.com/uxlove/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/choiceco/webregale.com/uxlove/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/choiceco/webregale.com/uxlove/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /home/choiceco/webregale.com/uxlove/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#19 /home/choiceco/webregale.com/uxlove/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/choiceco/webregale.com/uxlove/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/user/admin
+HTTP_REFERER=http://uxlove.webregale.com/index.php/site/login
+---
