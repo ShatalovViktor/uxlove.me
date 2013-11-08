@@ -1,5 +1,4 @@
 <?php
- echo $x;
+ print_r($arUser);
 ?>
-sfdsfsd
-привет мир!
+

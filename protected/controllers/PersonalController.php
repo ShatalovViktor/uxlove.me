@@ -2,6 +2,8 @@
 
 class PersonalController extends Controller
 {
+    public $layout='//layouts/personal';
+    
        public function filters()
 	{
 		return array(
@@ -12,17 +14,26 @@ class PersonalController extends Controller
      public function accessRules()
 	{
 		return array(
+			
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index'),
+				'actions'=>array('create','update','index','view','delete'),
 				'users'=>array('@'),
+			),
+			array('allow', // allow admin user to perform 'admin' and 'delete' actions
+				'actions'=>array('admin','delete'),
+				'users'=>array('admin'),
+			),
+			array('deny',  // deny all users
+				'users'=>array('*'),
 			),
 		);
 	}
     public function actionIndex()
     {
-      // echo Yii::app()->user;
-       
-        $this->render('index',array('variable'=>$x));
+       $model = new User;
+            $idUser=Yii::app()->user->getId();
+            $resUser = $model::model()->findByPk($idUser);
+		$this->render('index',array('arUser'=> $resUser));
     }
     public function actionLogin()
 	{
@@ -41,7 +52,7 @@ class PersonalController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->user->returnUrl);
+				$this->redirect('http://'.$_SERVER['HTTP_HOST'].'/index.php/personal/');
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));
