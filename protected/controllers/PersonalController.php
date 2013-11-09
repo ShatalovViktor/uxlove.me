@@ -16,7 +16,7 @@ class PersonalController extends Controller
 		return array(
 			
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','index','view','delete'),
+				'actions'=>array('create','update','index','view','delete','edit'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -62,6 +62,21 @@ class PersonalController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+        public function actionEdit()
+        {
+            $model = new User;
+            $idUser=Yii::app()->user->getId();
+            $resUser = $model::model()->findByPk($idUser);
+            if (isset($_POST['edit_profile']))
+            {
+                //echo '<pre>'; print_r($_POST); echo '</pre>';
+                $resUser->name=$_POST['userName'];
+                $resUser->surname=$_POST['userSurname'];
+                $resUser->update(array("name","surname"));
+            }
+          
+            $this->render('edit_profile',array('arUser'=> $resUser));
+        }
 }
 
 
