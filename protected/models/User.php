@@ -42,7 +42,7 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('login, name, surname, patronymic, country, city, email, phone, gender, birthday, balance_likes, balance_bn, occupation, rating, fb_id, vk_id, tw_id, g_id', 'required'),
+			array('login, pass, name, surname, patronymic, country, city, email, phone, gender, birthday, occupation, fb_id, vk_id, tw_id, g_id', 'required'),
 			array('balance_likes, balance_bn, rating', 'numerical', 'integerOnly'=>true),
 			array('login, name, surname, patronymic, country, city, email, gender', 'length', 'max'=>35),
 			array('phone', 'length', 'max'=>22),
@@ -57,12 +57,11 @@ class User extends CActiveRecord
 	 * @return array relational rules.
 	 */
 	public function relations()
-	{
-		// NOTE: you may need to adjust the relation name and the related
-		// class name for the relations automatically generated below.
-		return array(
-		);
-	}
+    {
+        return array(
+            'projects' => array(self::MANY_MANY, 'ProjectAb', 'user_project(user_id, project_id)'),
+        );
+    }
 
 	/**
 	 * @return array customized attribute labels (name=>label)

@@ -18,11 +18,18 @@
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
+    
+    <img id="User_photo" src="#" />
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'login'); ?>
 		<?php echo $form->textField($model,'login',array('size'=>35,'maxlength'=>35)); ?>
 		<?php echo $form->error($model,'login'); ?>
+	</div>
+    <div class="row">
+		<?php echo $form->labelEx($model,'pass'); ?>
+		<?php echo $form->passwordField($model,'pass',array('size'=>35,'maxlength'=>35)); ?>
+		<?php echo $form->error($model,'pass'); ?>
 	</div>
 
 	<div class="row">
@@ -130,6 +137,63 @@
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
+   
+<!--Регистрация через VK-->   
+    <a onclick="VK.Auth.login(userRegVK)">Регистрация через VK</a>
+    <div id="vk_api_transport"></div>
+    <script type="text/javascript">
+	window.vkAsyncInit = function(){
+	  VK.init({
+		apiId:3911313
+	  });
+	};
+	
+	function userDate(user){
+		if(typeof user.photo != "undefined") document.getElementById('User_photo').setAttribute('src', user.photo);
+		if(typeof user.login != "undefined") document.getElementById('User_login').value = user.login;
+		if(typeof user.name != "undefined") document.getElementById('User_name').value = user.name;
+		if(typeof user.second_name != "undefined") document.getElementById('User_patronymic').value = user.second_name;
+		if(typeof user.last_name != "undefined") document.getElementById('User_surname').value = user.last_name;
+		if(typeof user.country != "undefined") document.getElementById('User_country').value = user.country;
+		if(typeof user.city != "undefined") document.getElementById('User_city').value = user.city;
+		if(typeof user.email != "undefined") document.getElementById('User_email').value = user.email;
+		if(typeof user.phone != "undefined") document.getElementById('User_phone').value = user.phone;
+		if(typeof user.sex != "undefined") document.getElementById('User_gender').value = user.sex;
+		if(typeof user.bday != "undefined") document.getElementById('User_birthday').value = user.bday;
+		if(typeof user.acc_id != "undefined") document.getElementById('User_vk_id').value = user.acc_id;
+	}
+	  
+	function userRegVK(user){
+		var object = {};
+		VK.Api.call('users.get', {uids:user.session.mid, fields:'nickname,first_name,last_name,second_name,country,city,contacts,sex,bdate,photo_200'}, function(users){
+			if(users.response){
+				if(users.response[0].country) VK.Api.call('places.getCountryById', {cids:users.response[0].country}, function(country){object.country = country.response[0].name});
+				if(users.response[0].city) VK.Api.call('places.getCityById', {cids:users.response[0].city}, function(city){object.city = city.response[0].name});
+				if(users.response[0].sex == 2) var sex = "Мужчина";
+				else var sex = "Женщина";		
+				object.photo = users.response[0].photo_200;
+				object.login = users.response[0].nickname;
+				object.name = users.response[0].first_name;
+				object.second_name = users.response[0].second_name;
+				object.last_name = users.response[0].last_name;
+				object.email = user.session.user.email;
+				object.phone = users.response[0].mobile_phone;
+				object.sex = sex;
+				object.bday = users.response[0].bdate;
+				object.acc_id = user.session.mid;			
+				userDate(object);
+			}
+		});
+	}
+	
+	setTimeout(function() {
+	  var el = document.createElement("script");
+	  el.type = "text/javascript";
+	  el.src = "http://vk.com/js/api/openapi.js";
+	  el.async = true;
+	  document.getElementById("vk_api_transport").appendChild(el);
+	}, 0);
+    </script>
 
 <?php $this->endWidget(); ?>
 
